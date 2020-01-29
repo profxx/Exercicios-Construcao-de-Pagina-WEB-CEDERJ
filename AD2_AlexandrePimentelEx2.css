@@ -1,0 +1,309 @@
+/*
+* Estilo Geral
+*/
+
+body { 
+	background-color: #DD7755;
+	color: #EEEE33;
+	font-size: 16px;
+	font-family: "Stoke","verdana","liberation"
+	}
+	
+
+header {
+	display: block
+	}
+
+a:link{
+		color:#FFFF00;
+		text-decoration:none
+		}
+a:visited{
+		color:#EEEE00;
+		text-decoration:none
+		}
+
+.imgLogo {
+	padding-bottom:4px; 
+	float: left; 
+	margin-bottom:4px
+	}
+
+.ender {
+	float: right;
+	text-align: right; 
+	font-size: 15px; 
+	line-height: 140%; 
+	font-style: italic
+	}
+	
+nav {
+	display: block;
+	border-top: 2px solid;
+	border-bottom:2px solid;
+	border-color: yellow;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	text-align: center;
+	color:#DD7755;
+	font-weight:bold;
+	font-family: "Stoke","verdana","liberation";
+	position:relative;
+	top: 65px;
+	}
+
+nav#menu{
+	display:block;
+}
+
+nav#menu ul {
+		position:relative;
+		margin:3px auto;
+		color:red
+	}
+
+nav#menu li{
+		display:inline-block;
+			}
+
+nav#menu a {
+	display: block;
+	position: 3px auto;
+	color:red;
+	text-decoration:none;
+	}
+
+nav#menu a:visited {
+	color: red
+}
+		
+.botao{
+	color:#DD7755;
+	font-size:14px;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:4px;
+	margin-right:4px;
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color:#FFFF00;
+	width:100px
+}
+
+.apres{
+	position:relative;
+	top: 60px;
+	text-align:center;
+	font-size:18px
+	}
+	
+.moletons {
+	position:relative;
+	top:60px;
+	font-family: "Stoke","verdana","liberation";
+	font-size: 20px;
+}
+
+section {
+	display:block;
+	position: relative;
+	
+}
+
+.listaMoletons {
+	color: #880000;
+	background-color:#EEDD99;
+	padding:10px 10px 10px 50px;
+	border:2px;
+	border:solid;
+	top: 50px;
+	line-height:200%;
+	margin: 30px 10px 10px 10px;
+	}
+	
+.listaMoletons ol {
+	list-style-type:upper-roman;
+}
+
+.listaMoletons ul{
+	list-style-type:none;
+}
+
+.listaMoletons img {
+	vertical-align: middle;
+}
+	
+.preco {
+	color:#EE0000;
+	}
+
+/*
+Estilo Tabela Camisas.html
+*/
+
+.tabCamisa {
+	border-collapse:collapse;
+	background-color: #EEDD99;
+	color: #000066;
+	width: auto;
+	margin: 0 auto;
+	font-family: "arial", "ubuntu";
+}
+
+.tabInfo {
+	
+}
+
+.tabInfo th {
+	border: 3px;
+	border-style: solid;
+	border-color: #000055;
+	padding: 6px 12px 6px 12px;
+}
+
+.tabInfo td {
+	border: 3px;
+	border-style: solid;
+	border-color: #000055;
+	padding: 6px 12px 6px 12px;
+}
+
+.titulo {
+	color:#FFFF22;
+	background-color: #447799;
+	font-size: 24px;
+	font-weight: bold;
+	text-align:center;
+}
+
+.linTH {
+	color: #FFFFFF;
+	background-color: #777777;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.colTH {
+	color: #FFFFFF;
+	background-color: #999999;
+	text-align: left;
+	width: 50px;
+}
+
+.colCores {
+	width: 25px;
+}
+
+.colVazio {
+	
+
+}
+
+.precoTab {
+	color: #EE0000;
+	vertical-align: middle;
+	font-weight: bold; 
+}
+
+/***************************************
+* Estilo Formulário Compras
+*/
+.form { 
+	width:580px;
+	color:#880000; 
+	background-color:#EEDD99; 
+	padding:6px 6px 15px 6px; 
+	margin: 10px auto; 
+}
+
+}
+.listaCompras {
+display: absolute;
+margin-top: 8px;
+margin-left: 10px;
+width: 230px;
+height: 230px;
+float:right;
+}
+
+.colLabSelProd {
+	width: 260px;
+	height: 40px;
+	float: left;
+}
+
+.colSelProd{
+	width: 160px;
+	float: right;
+}
+
+.linhaProdSel {
+	width: 240px;
+	margin-bottom: 6px;
+	float: left;
+}
+
+.elemEsq{
+	float:left;
+	display:block;
+}
+
+.elemDir {
+	display:block;
+	float:left;
+}
+
+.impMedio{
+	size:medium;
+	width:80px;
+}
+
+.botoes{
+	text-align: left;
+	margin: 20px 10px 0px 10px;
+	}
+
+/***************************************
+* Estilo Seção Camisetas AD2
+*/
+
+
+#caixa{					/* Formata texto e caixa de texto embaixo da figura - TAMANHOS */
+	height: 60px;
+	text-align: center;
+}
+
+#trocarImg{
+	border: 3px;
+	border-style: solid;
+	border-color: #000055;
+}
+
+#precoNovo{
+	text-align: center;
+	color: red;
+	font-weight: bold;
+}
+
+/***************************************
+* Estilo Formulário Dados - Referente ao EXERCÍCIO 6 da AD1 que tive que refazer para a AD2
+*/
+.divLinha {
+	width: 550px;
+	margin-bottom: 6px;
+	}
+	.colPri {
+	float: left;
+	width: 90px;
+	display: block;
+	}
+	.colPriCompras {
+	float: left;
+	width: 86px;
+	display: block;
+	}
+	.colPriPag {
+	float: left;
+	width: 250px;
+	display: block;
+	}

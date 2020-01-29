@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>AD1 Ex2</title>
+	<link rel="stylesheet" type="text/css" href="AD2_AlexandrePimentelEx2.css">
+	<script language="javascript" src="compras.js"></script> 
+</head>
+<body>
+
+<header>
+	<img class="imgLogo" src="Imagens/Malhama_Topo.png"/>
+	
+	<adress class="ender"> 
+	Avenida Cuzco, 123 </br>
+	Tel.: (21) 91234-5678 </br> 
+	<a href="mailto:contato@malhama.com.br">contato@malhama.com.br</a>
+	</adress>
+		
+</header>
+		
+<nav id="menu">
+	<p>
+	<ul>
+	<li class="botao"><a href="AD2_AlexandrePimentelEx2.html">INICIAL</a></li>
+	<li class="botao"><a href="moletons.html">MOLETONS</a></li>
+	<li class="botao"><a href="camisetas.html">CAMISETAS</a></li>
+	<li class="botao"><a href="compras.html">COMPRAS</a></li>
+	</ul>
+	</p>
+	
+</nav>
+
+
+
+</br>
+</br>
+</br>
+
+<!-- Parte modificada para a COMPRAS - SECTION -->
+<section class="form">
+		<form name="f" method="POST">
+			<fieldset><legend> Identificação&nbsp;</legend>
+				<div class="divLinha">
+					<label class="colPri">Nome: </label>
+					<input type="text" class="inpGrande" name="TxtNomeCompleto"/>
+				</div>
+		
+				<div class="divLinha">
+					<label for="idEmail" class="colPri">E-mail:</label>
+					<input id="idEmail" class="inpGrande" type="email" name="TxtEmail"/>
+				</div>
+		
+				<div class="divLinha">
+					<label class="colPri">Endereço: </label>
+					<textarea name="TxtEnder" rows="2" class="inpEnder"></textarea>
+					<fieldset class="fsDir"><legend>Genero:</legend>
+					<label><input type="radio" name="TglSexo" value="M" checked />Mas</label>
+					<label><input type="radio" name="TglSexo" value="F" />Fem</label>
+					<label><input type="radio" name="TglSexo" value="O" />Outro</label>
+			</fieldset>
+				</div>
+			<fieldset class="fsDir"><legend>Nacimento:</legend>
+				<input type="number" name="TxtDiaNasc" min="1" max="31" class="numDD" /> /
+				<input type="number" name="TxtMesNasc" min="1" max="12" class="numDD" /> /
+				<input type="number" name="TxtAnoNasc" value="1980"	min="1920" max="2002" class="numQD" />
+			</fieldset class="fsForm">
+				<div class="divLinha">
+					<label class="colPri">Telefone:</label>
+					<input type="text" class="inpTelef"	name="TxtTelefone" onChange="VerificaTelef(this);" />
+				</div>
+				<div class="divLinha">
+					<label class="colPri">Celular:</label>
+					<input type="text" class="inpTelef"	name="TxtCelular" onChange="VerificaTelef(this);" />
+				</div>
+			</fieldset>
+			<fieldset><legend> Pagamento&nbsp;</legend>
+				<textarea class="listaCompras" name="listaPedidos" readonly>
+				</textarea>
+			<fieldset class="fsEsq"><legend> Cartão&nbsp;</legend>
+				<fieldset class="fsEsq">
+					<legend> Bandeira:</legend>
+					<label><input type="radio" name="RadBand" checked />Visa</label>
+					<label><input type="radio" name="RadBand" />Master</label>
+					<label><input type="radio" name="RadBand" />Elo</label>
+				</fieldset>
+		<br/><br/><br/><br/>
+		<div>
+		<label class="colPriCompras" for="mesVal">Validade:</label>
+		<input type="number" name="TxtMesVal" id="mesVal"
+		min="1" max="12" class="numDD" value="1" /> /
+		<input type="number" name="TxtAnoVal" value="2019"
+		min="2018" max="2026" class="numQD" /></div>
+		<div>
+		<br/>
+		<label class="colPriCompras" for="numCar">Número:</label>
+		<input type=text name="TxtNumCard"
+		class="inpNCC" id="numCar"/>
+		</div>
+		</fieldset>
+		<label class="colPriPag" for="TxtTotal"><br/>Valor R$
+		<input type="text" name="TxtTotal" readonly
+		id="TxtTotal" class="inpMedio" /></label>
+		</fieldset>
+		<div class="botoes">
+		<input type="submit" value="Enviar" onclick="valida()" />
+		<input type="reset" value="Limpar" />
+		</div></form>
+</section>
+
+</body>
+</html>

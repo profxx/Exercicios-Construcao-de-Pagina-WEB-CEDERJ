@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>AD1 Ex2</title>
+	<link rel="stylesheet" type="text/css" href="AD2_AlexandrePimentelEx2.css">
+</head>
+<body>
+
+<header>
+	<img class="imgLogo" src="Imagens/Malhama_Topo.png"/>
+	
+	<adress class="ender"> 
+	Avenida Cuzco, 123 </br>
+	Tel.: (21) 91234-5678 </br> 
+	<a href="mailto:contato@malhama.com.br">contato@malhama.com.br</a>
+	</adress>
+		
+</header>
+		
+<nav id="menu">
+	<p>
+	<ul>
+	<li class="botao"><a href="AD2_AlexandrePimentelEx2.html">INICIAL</a></li>
+	<li class="botao"><a href="moletons.html">MOLETONS</a></li>
+	<li class="botao"><a href="camisetas.html">CAMISETAS</a></li>
+	<li class="botao"><a href="compras.html">COMPRAS</a></li>
+	</ul>
+	</p>
+	
+</nav>
+
+
+
+</br>
+</br>
+</br>
+<section class="form">
+<form>
+<fieldset class="listaCompras">
+	
+	<legend> Seleção de Produtos e Lista de Compras&nbsp;</legend>
+	
+	<fieldset class="linhaProdSel">
+	
+		<legend class="linhaProdSel"> Selecionado</legend>
+		<div class="listaCompras">
+
+		<label class="listaCompras">Produto:
+		<Select name="colLabSelProd" class="colSelProd">
+		<option>---</option>
+		<optgroup label="Camisa">
+		
+			<option value="dudalina">Dudalina</option>
+			<option value="hering">Hering</option>
+			<option value="marfinno">Marfinno</option>
+		</optgroup>
+		<optgroup label="Moletom">
+			<option value="hering">Hering</option>
+			<option value="malwee">Malwee</option>
+			<option value="ripping">Ripping</option>
+		</optgroup>
+		</select> </label>
+		</br>
+	
+		<label class="listaCompras">Tamanho:
+		<Select name="colLabSelProd" class="colSelProd">
+		<option>---</option>
+		<option>Extra Pequena</option>
+		<option>Pequena</option>
+		<option>Média</option>
+		<option>Grande</option>
+		<option>Extra Grande</option>
+		<option>Extra Extra Grande</option>
+		</select> </label>
+		</br>
+		
+		<label class="labVal200Esq">Cor:
+		<Select name="colLabSelProd" class="colSelProd">
+		<option>---</option>
+		<option>Azul</option>
+		<option>Branco</option>
+		<option>Chumbo</option>
+		<option>Cinza</option>
+		<option>Preto</option>
+		<option>Verde</option>
+		</select> </label>
+		</br>
+	
+		<label>Preço: R$
+		<input type="text" name="TxtPreco" readonly" />
+		</label>
+		
+		<input type="button" value="Comprar" />
+		
+		</div>
+		
+		
+		</fieldset>
+		<label class="elemEsq" for="TxtTotal">Total: R$
+		<input type="text" name="TxtTotal" readonly
+		id="TxtTotal" class="val80Dir" /></label>
+		
+		
+		
+		
+	<br/>
+
+	
+
+	<textarea name="impMedio" class="elemDir" readonly>
+	</textarea>
+	</br>
+	
+	<div class="botoes">
+	<input type="submit" value="Continuar" />
+	<input type="reset" value="Limpar" />
+	</div>
+
+	</fieldset>
+	
+	
+
+</form>
+
+</section>
+
+</body>
+</html>
